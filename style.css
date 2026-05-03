@@ -224,14 +224,14 @@ header {
 }
 
 #study-journey .journey-content div:first-child {
-    background-image: linear-gradient(rgba(255, 247, 161, 0.7), rgba(255, 247, 161, 0.8)), url(/img/unnamed.jpg);
+    background-image: linear-gradient(rgba(255, 247, 161, 0.7), rgba(255, 247, 161, 0.8)), url(img/unnamed.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }/* Zastineni a prekryti obrazku pro zajisteni vysokeho kontrastu a citelnosti cerneho textu */
 
 #study-journey .journey-content div:last-child {
-    background-image: linear-gradient(rgba(253, 161, 255, 0.7), rgba(253, 161, 255, 0.8)), url(/img/s43967506.jpg);
+    background-image: linear-gradient(rgba(253, 161, 255, 0.7), rgba(253, 161, 255, 0.8)), url(img/s43967506.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
