@@ -71,7 +71,11 @@ h1 {
     margin: 0 auto;
     text-align: center;
     cursor: pointer;
+}
+
+h1 a {
     text-decoration: none;
+    color: #F0DD4A;
 }
 
 
