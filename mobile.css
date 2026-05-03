@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 1000px) {
-    .journey-content {
+    #study-journey .journey-content {
         flex-direction: column;
     }
 
