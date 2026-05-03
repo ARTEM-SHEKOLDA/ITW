@@ -1,0 +1,22 @@
+@media (max-width: 800px) {
+    body {
+        min-width: 800px;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .journey-content {
+        flex-direction: column;
+    }
+
+    #study-journey > div:last-child {
+    top: 1650px;
+    }
+
+    #contact-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+}

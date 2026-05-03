@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    font-family: "Istok Web", sans-serif;
+    height: auto;
+}/* Zakladni nastaveni */
+
+.sidebar-menu {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 998;
+    overflow-y: auto;
+    padding-top: 60px;
+}/* Fixni pozicovani prvku na strance*/
+
+.sidebar-menu.active {
+    left: 0;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.sidebar-menu li {
+    margin: 0;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 15px 30px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-menu a:hover {
+    background-color: #f0f0f0;
+    border-left-color: #FF66E3;
+    padding-left: 40px;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333333;
+}
+
+.close-menu:hover {
+    color: #FF66E3;
+}
+
+h1 {
+    font-family: "Iosevka Charon", monospace;
+    font-size: 40px;
+    color: #F0DD4A;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+h1 span {
+    color: #FF66E3;
+}
+
+h2 {
+    font-family: "Iosevka Charon", monospace;
+    font-size: 40px;
+    color: #F0DD4A;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+h2 span {
+    color: #FF66E3;
+}
+
+p {
+    color: #666666;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}/* Rozvrzeni obsahu pomoci flexboxu*/
+
+.menu-icon {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 999;
+}/* Fixni pozicovani prvku na strance*/
+#main-content {
+    display: flex;
+    justify-content: space-between;
+}/* Rozvrzeni obsahu pomoci flexboxu */
+
+.content-left {
+    display: flex;
+    gap: 40px;
+    padding-left: 10%;
+}
+
+.avatar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}/* Rozvrzeni obsahu pomoci flexboxu */
+
+.buttons-group {
+    display: flex;
+    gap: 20px;
+}/* Rozvrzeni obsahu pomoci flexboxu */
+
+.buttons-group button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.buttons-group button:first-child {
+    background: #FF66E3;
+}
+
+.buttons-group button:first-child:hover {
+    background: #e84fc9;
+}
+
+.buttons-group button:last-child {
+    background: #F0DD4A;
+    color: #ffffff;
+}
+
+.buttons-group button:last-child:hover {
+    background: #e0cd3a;
+}
+
+.vut-logo {
+    margin-top: 40px;
+    width: 80%;
+}
+
+/**/
+
+#study-journey {
+    padding-top: 100px;
+    position: relative;
+}
+
+#study-journey > div:first-child {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, white, transparent);
+    position: absolute;
+    z-index: 99;
+}/* barevne prechody*/
+
+#study-journey > div:last-child {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, white, transparent);
+    position: absolute;
+    z-index: 99;
+    top: 850px;
+}/* barevne prechody*/
+
+
+#study-journey h2 {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    margin-top: 50px;
+    word-spacing: 20px;
+    margin-right: -100px;
+    top: 150px;
+    right: 163px;
+}
+
+
+#study-journey .journey-content {
+    display: flex;
+    flex-direction: row;/* Rozvrzeni obsahu pomoci flexboxu */
+}
+
+#study-journey .journey-content div{
+    height: 800px;
+    text-align: center;
+}
+
+#study-journey .journey-content div:first-child {
+    background-image: linear-gradient(rgba(255, 247, 161, 0.7), rgba(255, 247, 161, 0.8)), url(/img/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}/* Zastineni a prekryti obrazku pro zajisteni vysokeho kontrastu a citelnosti cerneho textu */
+
+#study-journey .journey-content div:last-child {
+    background-image: linear-gradient(rgba(253, 161, 255, 0.7), rgba(253, 161, 255, 0.8)), url(/img/s43967506.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}/* Zastineni a prekryti obrazku pro zajisteni vysokeho kontrastu a citelnosti cerneho textu */
+
+
+#study-journey .journey-content div h3 {
+    margin-top: 300px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: "Iosevka Charon", monospace;
+}
+
+#study-journey .journey-content div p {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    color: #373737;
+    margin: 20px 20%;
+}
+
+#study-journey .journey-content div h4 {
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 200;
+    font-size: 16px;
+    margin: 0px auto;
+}
+
+#my-project-section h2 {
+    margin: 50px auto;
+    background-color: white;
+}
+
+#my-project-section article {
+    background-color: #FFFAC0;
+}
+
+#my-project-section article:first-of-type, #my-project-section article:last-of-type {
+    background-color: #FFEAFB;
+}
+
+#my-project-section article div:first-child {
+    background: linear-gradient(to bottom, white, transparent);
+    height: 50px;
+}/* barevne prechody*/
+
+#my-project-section article:nth-of-type(2) > div:nth-of-type(1) {
+    background: linear-gradient(to bottom, #FFEAFB, transparent);
+}/* barevne prechody*/
+
+#my-project-section article:nth-of-type(3) > div:nth-of-type(1) {
+    background: linear-gradient(to bottom, #FFFAC0, transparent);
+}/* barevne prechody*/
+
+
+.article-content {
+    margin: 0px 10%;
+    padding: 20px 0;
+}
+
+.article-content h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    color: #F0DD4A;
+    font-size: 32px;
+    font-family: "Iosevka Charon", monospace;
+}
+
+.article-content p {
+    font-size: 20px;
+    color: #666666;
+}
+
+#my-project-section article:nth-of-type(2) h3 {
+    color: #FF66E3;
+}
+.article-content > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    z-index: 2;
+}/* Rozvrzeni obsahu pomoci flexboxu */
+
+
+.article-content > div p,
+.article-content > div img {
+    flex: 1;
+}
+
+.article-content > div img {
+    max-width: 50%;
+}
+
+.article-content > div img {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+}
+
+#training-process .article-content > div p {
+    flex: none;
+    max-width: 800px;
+    text-align: center;
+}
+
+#tips-section div:first-child {
+    background: linear-gradient(to bottom, #FFEAFB, transparent);
+    height: 50px;
+    width: 100%;
+    z-index: 9;
+}/* barevne prechody*/
+
+#tips-section h2 {
+    margin-top: 50px;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 10%;
+    margin-top: 60px;
+}/* Rozvrzeni obsahu pomoci flexboxu */
+
+.tip-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}/* Rozvrzeni obsahu pomoci flexboxu */
+
+.tip-card h3 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.tip-card p {
+    text-align: center;
+    color: #666666;
+    margin: 0;
+}
+.conclusion-text {
+    padding: 0 10%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.conclusion-text p {
+    color: #333333;
+}
+
+footer div:first-child {
+    background: linear-gradient(to bottom, #ffffff, transparent);
+    height: 50px;
+    width: 100%;
+    z-index: 9;
+}/* barevne prechody*/
+
+footer {
+    background-color: #D9AFD5;
+}
+
+footer h2 {
+    color: #5C485A;
+}
+
+#contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 50px;
+}/* Rozvrzeni obsahu pomoci flexboxu */
+
+#contact-links a{
+    background-color: #B48BB0;
+    border-radius: 100%;
+    border: 20px solid #cfa1cb;
+    padding: 5%;
+}
+
+#contact-links a:hover {
+    background-color: #aa84a6;
+    border-color: #c398bf;
+    transition: 0.5s;/* Nastaveni plynulosti animaci */
+}
+
+#contact-links a:active {
+    background-color: #9e7a9a;
+    border-color: #b68db2;
+}
+
+footer p {
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+}
